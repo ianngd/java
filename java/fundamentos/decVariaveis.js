@@ -2,7 +2,7 @@
 let nome = 'Iann';
 const sobrenome = 'Gabriel Domingos';
 
-//nome = nome & ' ' & sobrenome;
+nome = `${nome} ${sobrenome}`; 
 
 // Exibir no console
 console.log(nome);
@@ -10,8 +10,10 @@ console.log(nome);
 
 const precoCombustivel = 5.79;
 const kmporlitro = 0.7
-const distanciaKm = 300;
+const distanciaKm = 100;
 
-const gastoViagem = (distancia_km/ combustivel_pkm) * preco_combustivel;
+let gastoViagem = (distanciaKm/ kmporlitro) * precoCombustivel;
 
-console.log (gasto_viagem);
+console.log (gastoViagem);
+//ou
+console.log(Number(gastoViagem.toFixed(2)));
